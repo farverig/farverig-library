@@ -1,8 +1,3 @@
 document.querySelectorAll('#year').forEach(el => el.textContent = new Date().getFullYear());
-
-document.querySelectorAll('.filter-row .chip').forEach(chip => {
-  chip.addEventListener('click', () => {
-    chip.parentElement.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
-    chip.classList.add('active');
-  });
-});
+document.querySelectorAll('.filter-row .chip').forEach(chip => {chip.addEventListener('click',()=>{chip.parentElement.querySelectorAll('.chip').forEach(c=>c.classList.remove('active'));chip.classList.add('active');});});
+const menu=document.querySelector('#site-menu');const openButton=document.querySelector('.menu-button');const closeButton=document.querySelector('.menu-close');if(menu&&openButton){const closeMenu=()=>{menu.hidden=true;openButton.setAttribute('aria-expanded','false');document.body.style.overflow='';};openButton.addEventListener('click',()=>{menu.hidden=false;openButton.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';});closeButton?.addEventListener('click',closeMenu);menu.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeMenu));}
