@@ -1,0 +1,17 @@
+@media(min-width:721px){
+  body:not(.home){padding-top:110px}
+  .topbar{position:fixed!important;top:0;left:0;right:0;width:100%!important;max-width:none!important;height:150px!important;padding-bottom:40px!important;padding-left:max(var(--pad),calc((100vw - 1180px)/2 + var(--pad)))!important;padding-right:max(var(--pad),calc((100vw - 1180px)/2 + var(--pad)))!important;background:linear-gradient(to bottom,rgba(9,9,9,.38) 0%,rgba(9,9,9,.14) 48%,rgba(9,9,9,0) 100%)!important;z-index:40!important}
+  .topbar:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);mask-image:linear-gradient(to bottom,#000 0%,rgba(0,0,0,.96) 25%,rgba(0,0,0,.72) 55%,rgba(0,0,0,.28) 78%,transparent 100%);-webkit-mask-image:linear-gradient(to bottom,#000 0%,rgba(0,0,0,.96) 25%,rgba(0,0,0,.72) 55%,rgba(0,0,0,.28) 78%,transparent 100%)}
+  .header-actions{gap:26px!important}
+  .menu-button,.menu-close{display:block!important;cursor:pointer}
+  .menu-button,body.home .menu-button{font-size:0!important;line-height:1!important;width:30px!important;height:30px!important;min-width:30px!important;min-height:30px!important;padding:0!important;position:relative!important;color:#fff!important}
+  .menu-button:before,.menu-button:after{content:"";position:absolute;left:6px;width:18px;height:1px;background:currentColor}
+  .menu-button:before{top:11px}.menu-button:after{top:17px}
+  .site-menu{z-index:100!important;background:rgba(9,9,9,.97)!important}
+  .site-menu .menu-inner{position:relative!important;width:100%!important;max-width:none!important;margin:0!important;padding:26px clamp(32px,6vw,110px) 32px!important}
+  .site-menu .menu-close{position:fixed!important;top:36px!important;right:max(var(--pad),calc((100vw - 1180px)/2 + var(--pad)))!important;margin:0!important;font-size:15px!important;line-height:1!important;padding:10px 6px!important;min-height:38px!important;display:flex!important;align-items:center!important;justify-content:flex-end!important;z-index:110!important}
+  .site-menu nav{margin-top:94px!important;width:100%!important}
+  .site-menu nav a{font-size:clamp(42px,4.6vw,76px)!important;line-height:.98!important;padding:18px 0!important;letter-spacing:-.05em!important;border-color:#303030!important}
+  .site-menu nav a span{font-size:.7em!important}
+  .site-menu nav a:first-child{border-top:1px solid #3a3a3a!important}
+}
